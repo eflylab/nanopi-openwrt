@@ -1,4 +1,4 @@
-name: build
+name: build_wifi
 
 on:
   repository_dispatch:
@@ -63,6 +63,7 @@ jobs:
       - name: Update feeds and packages
         run: |
           cd ~/lede
+          git checkout 4ae4035e6012c19a5f2931025c09f29d1c1939ae
           if [ -d 'feeds' ]; then
             pushd feeds/packages; git restore .; popd
             pushd feeds/luci; git restore .; popd
