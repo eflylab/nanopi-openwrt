@@ -1,4 +1,4 @@
-name: build_wifi
+name: build
 
 on:
   repository_dispatch:
