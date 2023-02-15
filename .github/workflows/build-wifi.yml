@@ -69,7 +69,7 @@ jobs:
       - name: Update feeds and packages
         run: |
           cd ~/lede
-          git checkout 4ae4035e6012c19a5f2931025c09f29d1c1939ae
+          git checkout e76d06cd1538abb83dcd4622243963cabbb0ca82
           rm -rf ./tmp && rm -rf ./feeds && rm -rf ./pacakges/feeds
           if [ -d 'feeds' ]; then
             pushd feeds/packages; git restore .; popd
